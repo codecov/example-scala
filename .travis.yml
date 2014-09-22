@@ -1,0 +1,13 @@
+language: scala
+
+scala:
+  - 2.10.2
+
+before_script:
+  - sudo pip install git+git://github.com/codecov/codecov-python.git@go#egg=codecov
+
+script:
+  - sbt clean scoverage:test
+
+after_script:
+  - codecov
