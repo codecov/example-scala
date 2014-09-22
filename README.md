@@ -14,7 +14,7 @@ Scala <3 [Codecov.io](https://codecov.io)
 ## Usage
 
 ```sh
-pip install codecov
+sudo pip install codecov
 codecov --token=<repo token>
 ```
 
@@ -29,7 +29,7 @@ codecov --min-coverage=75
 
 ```yml
 install:
-    pip install codecov
+    sudo pip install codecov
 after_success:
     codecov
 ```
@@ -40,7 +40,7 @@ after_success:
 > Append to your `Test Commands` *after* your test commands
 
 ```sh
-pip install codecov
+sudo pip install codecov
 codecov --token=<repo token>
 ```
 
@@ -53,7 +53,7 @@ codecov --token=<repo token>
 ```yml
 test:
     post:
-        - pip install codecov
+        - sudo pip install codecov
         - codecov --token=<repo token>
 ```
 > ### Start testing with [Circle CI](https://circleci.com/)
