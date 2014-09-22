@@ -1,14 +1,11 @@
-Scala <3 [Codecov.io](https://codecov.io)
+Scala <3 [Codecov.io][1]
 =======
 | [https://codecov.io/][1] | [@codecov][2] | [hello@codecov.io][3] |
 | ------------------------ | ------------- | --------------------- |
-=======
 
+> Example of how to integrate with [Codecov.io][1] for your **awesome** Scala project!
 
-[![Build Status](https://secure.travis-ci.org/codecov/example-scala.svg?branch=master)](http://travis-ci.org/codecov/example-scala) [![codecov.io](https://codecov.io/github/codecov/example-scala/coverage.svg?branch=master)](https://codecov.io/github/codecov/example-scala)
-
-> This repo is simply an example of how to integrate with Codecov.io for your **awesome** Scala project!
-
+## See this repos [Coveage Reports][4] [![codecov.io](https://codecov.io/github/codecov/example-scala/coverage.svg?branch=master)](https://codecov.io/github/codecov/example-scala)
 
 
 ## Usage
@@ -64,3 +61,4 @@ test:
 [1]: https://codecov.io/
 [2]: https://twitter.com/codecov
 [3]: mailto:hello@codecov.io
+[4]: https://codecov.io/github/codecov/example-scala

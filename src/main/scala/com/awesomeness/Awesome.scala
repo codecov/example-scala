@@ -1,4 +1,4 @@
-package com.shippable
+package com.awesomeness
 
 class Awesomeness {
   def main(args: Array[String]) {
