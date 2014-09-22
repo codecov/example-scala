@@ -1,11 +1,11 @@
-Scala <3 [Codecov.io][1]
+Scala Example
 =======
 | [https://codecov.io/][1] | [@codecov][2] | [hello@codecov.io][3] |
 | ------------------------ | ------------- | --------------------- |
 
 > Example of how to integrate with [Codecov.io][1] for your **awesome** Scala project!
 
-## See this repos [Coveage Reports][4] [![codecov.io](https://codecov.io/github/codecov/example-scala/coverage.svg?branch=master)](https://codecov.io/github/codecov/example-scala)
+## See this repos [Coveage Reports][4]
 
 
 ## Usage
