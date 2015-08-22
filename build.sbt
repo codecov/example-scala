@@ -13,11 +13,7 @@ libraryDependencies ++= Seq(
 
 instrumentSettings
 
-ScoverageKeys.minimumCoverage := 60
-
-ScoverageKeys.failOnMinimumCoverage := false
-
-ScoverageKeys.highlighting := {
+ScoverageSbtPlugin.ScoverageKeys.coverageHighlighting := {
   if (scalaBinaryVersion.value == "2.10") false
   else false
 }

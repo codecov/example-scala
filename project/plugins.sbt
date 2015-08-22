@@ -1,1 +1,1 @@
-addSbtPlugin("org.scoverage" % "sbt-scoverage" % "0.99.5")
+addSbtPlugin("org.scoverage" % "sbt-scoverage" % "1.1.0")
