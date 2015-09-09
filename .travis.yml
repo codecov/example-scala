@@ -3,8 +3,11 @@ language: scala
 scala:
   - 2.10.2
 
+before_script:
+  - pip install --user codecov
+
 script:
   - sbt clean scoverage:test
 
 after_script:
-  - bash <(curl -s https://codecov.io/bash)
+  - codecov
