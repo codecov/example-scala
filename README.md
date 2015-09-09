@@ -11,14 +11,15 @@ This repository serves as an **example** on how to use [Codecov Global][4] for S
 Add to your `.travis.yml` file.
 ```yml
 language: scala
+
 script:
   - sbt clean scoverage:test
 
 after_success:
-  - bash <(curl -s https://codecov.io/bash)
+  - pip install --user codecov && codecov
 ```
 
-> All other CI you can simply run `bash <(curl -s https://codecov.io/bash)`.
+> All other CI you can simply run `pip install --user codecov && codecov`.
 
 ## Private Repos
 
@@ -29,7 +30,7 @@ env:
     - CODECOV_TOKEN=:uuid-repo-token
 
 after_success:
-  - bash <(curl -s https://codecov.io/bash)
+  - pip install --user codecov && codecov
 ```
 
 View source and learn more about [Codecov Global Uploader][4]
@@ -37,4 +38,4 @@ View source and learn more about [Codecov Global Uploader][4]
 [1]: https://codecov.io/
 [2]: https://twitter.com/codecov
 [3]: mailto:hello@codecov.io
-[4]: https://github.com/codecov/codecov-bash
+[4]: https://github.com/codecov/codecov-python
