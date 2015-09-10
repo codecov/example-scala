@@ -11,13 +11,11 @@ libraryDependencies ++= Seq(
   "org.scalatest"  % "scalatest_2.10"  % "2.2.0"
 )
 
-instrumentSettings
+ScoverageSbtPlugin.ScoverageKeys.coverageMinimum := 60
 
-ScoverageKeys.minimumCoverage := 60
+ScoverageSbtPlugin.ScoverageKeys.coverageFailOnMinimum := false
 
-ScoverageKeys.failOnMinimumCoverage := false
-
-ScoverageKeys.highlighting := {
+ScoverageSbtPlugin.ScoverageKeys.coverageHighlighting := {
   if (scalaBinaryVersion.value == "2.10") false
   else false
 }
