@@ -16,7 +16,7 @@ script:
   - sbt clean coverage test
 
 after_success:
-  - bash <(curl -s https://codecov.io/bash)
+  - pip install --user codecov && codecov
 ```
 
 > All other CI you can simply run `pip install --user codecov && codecov`.
