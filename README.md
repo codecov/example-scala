@@ -13,10 +13,10 @@ Add to your `.travis.yml` file.
 language: scala
 
 script:
-  - sbt clean scoverage:test
+  - sbt clean coverage test
 
 after_success:
-  - pip install --user codecov && codecov
+  - bash <(curl -s https://codecov.io/bash)
 ```
 
 > All other CI you can simply run `pip install --user codecov && codecov`.
