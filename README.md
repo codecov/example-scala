@@ -25,12 +25,8 @@ after_success:
 
 Add to your `.travis.yml` file.
 ```yml
-env:
-  global:
-    - CODECOV_TOKEN=:uuid-repo-token
-
 after_success:
-  - pip install --user codecov && codecov
+  - pip install --user codecov && codecov -t :token
 ```
 
 View source and learn more about [Codecov Global Uploader][4]
