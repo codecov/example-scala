@@ -10,12 +10,3 @@ libraryDependencies ++= Seq(
   "junit"          % "junit"           % "4.5",
   "org.scalatest"  % "scalatest_2.10"  % "2.2.0"
 )
-
-ScoverageSbtPlugin.ScoverageKeys.coverageMinimum := 60
-
-ScoverageSbtPlugin.ScoverageKeys.coverageFailOnMinimum := false
-
-ScoverageSbtPlugin.ScoverageKeys.coverageHighlighting := {
-  if (scalaBinaryVersion.value == "2.10") false
-  else false
-}
