@@ -16,17 +16,15 @@ script:
   - sbt clean coverage test
 
 after_success:
-  - pip install --user codecov && codecov
+  - bash <(curl -s https://codecov.io/bash)
 ```
-
-> All other CI you can simply run `pip install --user codecov && codecov`.
 
 ## Private Repos
 
 Add to your `.travis.yml` file.
 ```yml
 after_success:
-  - pip install --user codecov && codecov -t :token
+  - bash <(curl -s https://codecov.io/bash) -t :token
 ```
 
 View source and learn more about [Codecov Global Uploader][4]
@@ -34,4 +32,4 @@ View source and learn more about [Codecov Global Uploader][4]
 [1]: https://codecov.io/
 [2]: https://twitter.com/codecov
 [3]: mailto:hello@codecov.io
-[4]: https://github.com/codecov/codecov-python
+[4]: https://github.com/codecov/codecov-bash
