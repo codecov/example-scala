@@ -13,7 +13,7 @@ Add to your `.travis.yml` file.
 language: scala
 
 script:
-  - sbt clean coverage test
+  - sbt clean coverage test coverageReport
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
