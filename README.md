@@ -1,33 +1,15 @@
 Codecov Scala Example
 =====================
 
-| [https://codecov.io][1] | [@codecov][2] | [hello@codecov.io][3] |
-| ----------------------- | ------------- | --------------------- |
+1. Add `scoverage` to plugin list
+  - `addSbtPlugin("org.scoverage" % "sbt-scoverage" % "1.3.5")` as [seen here](https://github.com/codecov/example-scala/blob/master/project/plugins.sbt#L1)
+1. Add `coverage` and `coverageReport` to `sbt`
+  - `sbt clean coverage test coverageReport` as [seen here](https://github.com/codecov/example-scala/blob/master/.travis.yml#L7)
+1. After tests are complete add the Codecov uploader
+  - `bash <(curl -s https://codecov.io/bash)` as [seen here](https://github.com/codecov/example-scala/blob/master/.travis.yml#L10)
+  - Please provide your upload token. Learn more [here](http://docs.codecov.io/docs/about-the-codecov-bash-uploader#section-upload-token)
 
-This repository serves as an **example** on how to use [Codecov Global][4] for Scala.
-
-# Travis CI
-
-Add to your `.travis.yml` file.
-```yml
-language: scala
-
-script:
-  - sbt clean coverage test coverageReport
-
-after_success:
-  - bash <(curl -s https://codecov.io/bash)
-```
-
-## Private Repos
-
-Add to your `.travis.yml` file.
-```yml
-after_success:
-  - bash <(curl -s https://codecov.io/bash) -t :token
-```
-
-View source and learn more about [Codecov Global Uploader][4]
+> Please contact support for questions and help :thumbsup: https://codecov.io/support
 
 [1]: https://codecov.io/
 [2]: https://twitter.com/codecov
