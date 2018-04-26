@@ -9,7 +9,7 @@ Codecov Scala Example
   - `bash <(curl -s https://codecov.io/bash)` as [seen here](https://github.com/codecov/example-scala/blob/master/.travis.yml#L10)
   - Please provide your upload token. Learn more [here](http://docs.codecov.io/docs/about-the-codecov-bash-uploader#section-upload-token)
 
-> Please contact support for questions and help :thumbsup: https://codecov.io/support
+We are happy to help if you have any questions. Please contact email our Support at [support@codecov.io](mailto:support@codecov.io)
 
 [1]: https://codecov.io/
 [2]: https://twitter.com/codecov
