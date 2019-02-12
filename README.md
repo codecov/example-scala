@@ -2,7 +2,7 @@ Codecov Scala Example
 =====================
 
 1. Add `scoverage` to plugin list
-  - `addSbtPlugin("org.scoverage" % "sbt-scoverage" % "1.3.5")` as [seen here](https://github.com/codecov/example-scala/blob/master/project/plugins.sbt#L1)
+  - `addSbtPlugin("org.scoverage" % "sbt-scoverage" % "1.5.1")` as [seen here](https://github.com/codecov/example-scala/blob/master/project/plugins.sbt#L1)
 1. Add `coverage` and `coverageReport` to `sbt`
   - `sbt clean coverage test coverageReport` as [seen here](https://github.com/codecov/example-scala/blob/master/.travis.yml#L7)
 1. After tests are complete add the Codecov uploader
