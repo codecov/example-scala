@@ -10,5 +10,6 @@ class TestAwesome extends JUnitSuite {
  @ Test def awesomeExample {
     assertEquals(1, awesome square 1)
     assertEquals(6, awesome multiple (2,3))
+    assertEquals((), awesome branch 1)
   }
 }
