@@ -1,12 +1,13 @@
-name := "scala"
+ThisBuild / version := "0.1.0-SNAPSHOT"
 
-version := "0.98.5"
+ThisBuild / scalaVersion := "2.13.13"
 
-scalaVersion := "2.10.2"
+lazy val root = (project in file("."))
+  .settings(
+    name := "example-scala",
+  )
 
-crossScalaVersions := Seq("2.10.2", "2.10.3", "2.11.8")
 
 libraryDependencies ++= Seq(
-  "junit"          % "junit"           % "4.5",
-  "org.scalatest"  %% "scalatest"      % "3.0.1"
+  "org.scalatest" %% "scalatest" % "3.2.18" % Test
 )

@@ -1,14 +1,13 @@
 package com.awesomeness
 
-import org.scalatest.junit.JUnitSuite
-import junit.framework.Assert._
-import org.junit.Test
+import org.scalatest.flatspec.AnyFlatSpec
+import org.scalatest.matchers.should
 
-class TestAwesome extends JUnitSuite {
- val awesome = new Awesomeness
+class TestAwesome extends AnyFlatSpec with should.Matchers {
 
- @ Test def awesomeExample {
-    assertEquals(1, awesome square 1)
-    assertEquals(6, awesome multiple (2,3))
+  "Awesome" should "work" in {
+    assert(Awesome.square(1) == 1)
+    assert(Awesome.multiple(2,3) == 6)
   }
+
 }
